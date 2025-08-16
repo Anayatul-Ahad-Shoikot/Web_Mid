@@ -213,5 +213,100 @@
     color: #e90606;
 }
 
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
 
+  .content .left, 
+  .content .right {
+    width: 90%;
+    margin: 1rem 0;
+    padding: 40px;
+  }
 
+  .left .text p {
+    font-size: 22px;
+  }
+
+  .right .form {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .nav li {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .content .left, 
+  .content .right {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .left .text p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .left .author {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left .author img {
+    margin-bottom: 10px;
+  }
+
+  .right .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .right .title h1 {
+    font-size: 1.3rem;
+  }
+
+  .form input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .form button {
+    font-size: 0.9rem;
+    height: 40px;
+  }
+}
